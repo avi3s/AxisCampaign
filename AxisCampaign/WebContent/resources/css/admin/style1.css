@@ -1,0 +1,416 @@
+/* CSS Document */
+
+*{ padding:0; margin:0;}
+html { -ms-text-size-adjust: 100%;  -webkit-text-size-adjust: 100%;}
+
+/**
+ * Remove default margin.
+ */
+html,body{
+	height:100%;
+}
+
+body { color:#2b2a2a; font-family: 'Open Sans', sans-serif; font-size:13px; line-height:20px; font-weight:400; height:100%;}
+
+h3{ font-family: 'Open Sans', sans-serif; font-size:20px; line-height:1; font-weight:600; color:#2c363a;}
+a{ color:#cf0c66; font-size:13px; text-decoration:none; outline:0; transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;  }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:hover{ outline: 0; transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
+p{ font-size:13px; line-height:20px; color:#2b2a2a;}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*----login-page-start----*/
+
+.wrapper{
+	position:relative;
+	height:100%;
+}
+header{
+	background:url(../images/headr.png) no-repeat;
+	background-size:cover;
+	width:100%;
+	height:80px;
+	z-index: 9999;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	position:fixed;
+}
+header img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:20px;
+}
+.login-wraper{ 
+	max-width:350px;
+	width:350px; 
+	left: 50%;
+	top: 50%;
+    position: absolute;
+	box-sizing:border-box;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.login-wraper h3{ 
+	margin-bottom:15px;
+	text-transform:uppercase;
+	text-align:center;
+}
+.login-wraper input[type="text"],
+.login-wraper input[type="password"]{ 
+	width:100%;
+	display:block;
+	border:1px solid #ccc;
+	box-sizing: border-box;
+	padding:10px;
+	margin-bottom:15px;
+	line-height:14px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.login-wraper a:hover{ 
+	text-decoration:underline;
+}
+.login-wraper input[type="submit"]{ 
+	width:100%;
+	display:block;
+	background:#cf0c66;
+	margin-top:15px;
+	color:#fff;
+	font-family: "Open Sans",sans-serif;
+	font-size:18px;
+	line-height:40px;
+	font-weight:700;
+	text-transform:uppercase;
+	border:0;
+	cursor:pointer;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	box-shadow: 0 2px 0 0 #b91e57;
+	-moz-box-shadow: 0 2px 0 0 #b91e57;
+	-webkit-box-shadow: 0 2px 0 0 #b91e57;
+}
+.login-wraper input[type="submit"]:hover{
+	background-color:#1b2123;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	box-shadow: 0 2px 0 0 #000;
+	-moz-box-shadow: 0 2px 0 0 #000;
+	-webkit-box-shadow: 0 2px 0 0 #000;
+}
+
+footer{
+	background:#e8eaeb;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding:10px 0;
+}
+footer p{
+	font-size:13px;
+	color:#717577;
+	text-align:center;
+}
+/*********************************************Form styling starts****************************************************/
+.wrap{
+	display: table;
+    height: 100%;
+    min-width: 300px;
+    width: 100%;
+}
+.bodyPanel{
+	min-height: 100%;
+    position: relative;
+    top: 0;
+}
+.sideBar{
+	background: #2e2c2d none repeat scroll 0 0;
+    box-sizing: border-box;
+    display: table-cell;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    vertical-align: top;
+    width: 250px;
+    z-index: 9999;
+}
+.sideBar h2{
+	text-align:center;
+	color:#eee;
+	font-size:100%;
+	padding:11px 0;
+	position:relative;
+}
+
+.sideBar ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+	padding-top:10px;
+
+}
+.sideBar ul li {
+    background: #2e2c2d;
+    border-left: 2px solid #2e2c2d;
+    margin: 0;
+}
+.sideBar ul li a {
+    color: #bbc2c7;
+    font-size: 107%;
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out 0s;
+    vertical-align: top;
+	display: block;
+    padding: 10px 0 10px 30px;
+}
+.sideBar ul li:hover,
+.sideBar ul li.active{
+	
+	border-left:#c91f63 solid 2px;
+	background:#130e10;
+	
+	-webkit-transition:  all 100ms ease-in-out;
+    -moz-transition:  all 100ms ease-in-out;
+    -ms-transition:  all 100ms ease-in-out;
+    -o-transition:  all 100ms ease-in-out;
+    transition:  all 100ms ease-in-out;
+}
+
+.content{	
+	padding:3%;
+	margin-left:250px;
+	position: relative;
+    top: 60px;
+}
+.panelTitle h1{
+	text-transform:uppercase;
+	font-weight:bold;
+	padding-bottom:30px;
+	font-size:18px;
+}
+.fullForm{
+	padding:10px;
+	box-sizing:border-box;
+	display:table;
+}
+.formGroup{
+	width:100%;
+	padding:0 15px;
+	display:block;
+	float:left;
+	font-size:14px;
+	padding:10px 0;
+	color:#333;
+}
+.staticField{
+	float:left;
+	width:18%;
+	text-align:right;
+	padding-top:7px;
+}
+.leftInput{
+	float:right;
+	width:80%;
+}
+.normal{
+	width:100%;
+	height:35px;
+	box-sizing:border-box;
+	padding:5px 10px;
+	border: 1px solid #bdc4c9;
+	
+	transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
+	-webkit-transition: all 200ms linear;
+}
+.normal::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+	font-family: "Open Sans",sans-serif;
+}
+.normal:focus{
+	background:#eee;
+}
+#helpTxt{
+	padding:5px 0;
+	box-sizing:border-box;
+	float:left;
+	margin-top:5px;
+}
+.round{
+	-webkit-border-radius: 50px 50px 50px 50px;
+	border-radius: 50px 50px 50px 50px;
+}
+.disable{
+	cursor:no-drop;
+	background:#eee;
+}
+.has-success{
+    border-color:#5cb85c;
+	color:#00bb03;
+}
+.has-warning{
+	border-color:#ff9b0b;
+	color:#df8608;
+}
+.has-error{
+	border-color: #d9534f;
+    color: #d43f3a;
+}
+.inputGroup{
+	border-collapse: separate;
+    display: table;
+    position: relative;
+	width:100%;
+}
+.inputAddon{
+	text-align:center;
+	vertical-align: middle;
+    white-space: nowrap;
+    width:5%;
+	display:table-cell;
+	background:#eee;
+	border: 1px solid #bdc4c9;
+	
+}
+.inputAddon:first-child {
+    border-right: 0 none;
+	-webkit-border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px;
+}
+.inputAddon:last-child {
+    border-left: 0 none;
+	-webkit-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+}
+#txtarea{
+	height:100px;
+}
+.normal-line{
+	border-left:0;
+	border-right:0;
+	border-top:0;
+}
+.normal-line:focus{
+	background:rgba(0,0,0,0);
+	border-bottom:#333 solid 1px;
+}
+.radio{
+	padding-top:7px;
+}
+.radioB, .check{
+	display:inline-block;
+	margin:0 5px;
+}
+.select{
+	width:100px;
+	padding:5px;
+	
+}
+.formFoot{
+	
+}
+.formFoot p{
+	text-align:left;
+	margin-left:300px;
+}
+/*********************************************Table styling starts****************************************************/
+
+.tableEle {
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+.tableEle table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+.tableEle tr:hover td{
+	
+}
+.tableEle tr:nth-child(odd)
+{ 
+	background-color:#e5e5e5;
+}
+.tableEle tr:nth-child(even){ 
+	background-color:#ffffff;
+}
+.tableEle td{
+	vertical-align:middle;
+	border:1px solid #ddd;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}
+.tableEle tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}
+.tableEle tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+.tableEle tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.tableEle tr:first-child td{
+	background:#cf0c66 ;
+	border:0px solid #ddd;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#eee;
+}
+.tableEle tr:first-child:hover td{
+	background:#333 ;
+}
+.tableEle tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.tableEle tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}

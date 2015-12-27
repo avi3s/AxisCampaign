@@ -1,0 +1,160 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+	background: #e1e5e7;
+	padding: 26px 19px 22px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-bottom: 2px solid #d2d2d2;
+}
+.owl-carousel .owl-item .cb-icon {
+	width: 68px;
+	height: 68px;
+	overflow: hidden;
+	background: url(../../images/user/cb-icon-rbg.png) no-repeat;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+
+.owl-carousel .owl-item .cb-icon img {
+	display: block;
+    margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.owl-carousel .owl-item h3 {
+	font-size: 16px;
+	color: #222d32;
+	font-weight: normal;
+	margin: 19px 0 20px;
+	text-align: center;
+}
+.owl-carousel .owl-item p {
+	font-size: 13px;
+	color: #595f60;
+	font-weight: normal;
+	line-height: 22px;
+}
+.owl-carousel .owl-item .ranking {
+	width: 50%;
+	float: left;
+}
+.owl-carousel .owl-item .ranking.b-r {
+	font-size: 11px;
+	color: #cc1f64;
+	text-transform: uppercase;
+	font-family: 'open_sansbold';
+	margin-top: 14px;
+	text-align: left;
+}
+.owl-carousel .owl-item .ranking.b-r a{
+	color: #cc1f64;
+}
+.owl-carousel .owl-item .ranking.c-r {
+	font-size: 11px;
+	color: #232d31;
+	text-transform: uppercase;
+	font-family: 'open_sansbold';
+	margin-top: 14px;
+	text-align: right;
+}
+.owl-carousel .owl-item .ranking.c-r a{
+	color: #232d31;
+}
+.owl-carousel .owl-item:nth-child(2n+0) {
+	background: url(../../images/user/camaings-purple-bg.jpg) no-repeat;
+	background-size: cover;
+	border-bottom: 2px solid #ba1f58;
+	color: #fff;
+}
+.owl-carousel .owl-item:nth-child(2n+0) h3 {
+	color: #fff;
+}
+.owl-carousel .owl-item:nth-child(2n+0) p {
+	color: #fff;
+}
+.owl-carousel .owl-item:nth-child(2n+0) .ranking.b-r, .owl-carousel .owl-item:nth-child(2n+0) .ranking.b-r a {
+	color: #fff;
+}
+.owl-carousel .owl-item:nth-child(2n+0) .ranking.c-r, .owl-carousel .owl-item:nth-child(2n+0) .ranking.c-r a {
+	color: #fff;
+}
+.owl-carousel .owl-item:nth-child(2n+0) .meter > span {
+    background: #ff3f98;
+}
+.owl-carousel .owl-item:nth-child(2n+0) .cb-icon {
+	background: url(../../images/user/cb-icon-gbg.png) no-repeat;
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+

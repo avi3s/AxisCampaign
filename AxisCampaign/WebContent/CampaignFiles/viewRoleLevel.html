@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axis Campaign Portal</title>
+<link href="resources/css/admin/style.css" rel="stylesheet"
+	type="text/css">
+<link href="resources/css/admin/responsive.css" rel="stylesheet"
+	type="text/css">
+<script
+	src="http://10.0.2.99:14564/AxisCampaign/resources/js/admin/jquery-1.11.2.min.js"></script>
+<script src="resources/js/admin/custom.js"></script>
+<script
+	src="http://10.0.2.99:14564/AxisCampaign/resources/js/admin/jquery.dataTables.min.js"></script>
+<link
+	href="http://10.0.2.99:14564/AxisCampaign/resources/css/admin/jquery.dataTables.min.css"
+	rel="stylesheet" type="text/css">
+<script
+	src="http://10.0.2.99:14564/AxisCampaign/resources/js/admin/dataTables.responsive.min.js"></script>
+<link
+	href="http://10.0.2.99:14564/AxisCampaign/resources/css/admin/dataTables.responsive.css"
+	rel="stylesheet" type="text/css">
+
+<!-- <script src='https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js'></script>
+<link href='https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css' />
+<script src='https://cdn.datatables.net/responsive/1.0.0/js/dataTables.responsive.min.js'></script> 
+<link href='https://cdn.datatables.net/responsive/1.0.0/css/dataTables.responsive.css' rel='stylesheet' type='text/css' /> -->
+
+<!--[if lt IE 9]>
+		<script src="js/admin/html5.js" ></script>
+  	<![endif]-->
+
+<script type="text/javascript">
+$(document).ready(function() {
+	//alert("ok");
+	$('#example').DataTable({
+		responsive : true,
+		"pagingType" : "full_numbers",
+		language : {
+			searchPlaceholder : "Search",
+			"paginate" : {
+				"previous" : "< Previous",
+				"next" : "Next >",
+				"first" : "< First",
+				"last" : "Last >"
+			}
+		}
+	});
+	$(".dataTables_filter label").contents().first().remove();
+});
+</script>
+</head>
+
+<body>
+	<div class="wholeWrap">
+		<!--Header-->
+		<header class="header">
+		<div class="fixedArea">
+			<figure id="logo"> <a href="#"><img
+				src="http://10.0.2.99:14564/AxisCampaign/resources/images/admin/logo.png"
+				width="168" height="40" alt=""></a> </figure>
+			<h3>Badhti ka naam zindagi...</h3>
+		</div>
+		<a href="logout" class="logOut">Logout</a> </header>
+		<!--/Header-->
+
+		<!--Left Area-->
+		<div class="leftArea">
+			<!--<div class="profileArea">
+    <figure> <a href="editAdminProfile"><img src="http://10.0.2.99:14564/AxisCampaign/resources/images/admin/avatar.png" width="58" height="58" alt=""></a> </figure>
+    <h2> Admin </h2>
+  </div> -->
+			<nav class="nav" id="nav">
+			<ul>
+				<li id="menuIco1"><a href="viewRoleLevel">Role Level
+						Management</a></li>
+				<li id="menuIco2"><a href="viewSubRoleLevel">Sub Role Level
+						Management</a>
+					<ul>
+						<li><a href="#">asdfsdf</a></li>
+						<li><a href="#">asdfsdf</a></li>
+						<li><a href="#">asdfsdf</a></li>
+						<li><a href="#">asdfsdf</a></li>
+					</ul></li>
+				<li id="menuIco3"><a href="viewRole">Role Management</a></li>
+				<li id="menuIco4"><a href="viewUser">User Management</a></li>
+				<li id="menuIco8"><a href="viewNotification">Notification
+						Management</a></li>
+				<li id="menuIco5"><a href="viewCampaign">Campaign
+						Management</a></li>
+				<li id="menuIco6"><a href="viewPromotionalFileUpload">User
+						Specific File Upload Management</a></li>
+				<li id="menuIco11"><a href="viewTargetField">Target Field
+						Management</a></li>
+				<li id="menuIco12"><a href="viewTargetFieldValue">Target
+						Field Value Management</a></li>
+				<li id="menuIco13"><a href="viewacheivementfield">Achievement
+						Field Management</a></li>
+				<li id="menuIco14"><a
+					href="viewacheivementfieldvalueManagement">Achievement Field
+						Value Management</a></li>
+				<li id="menuIco9"><a href="viewEscalationMatrix">Escalation&nbsp;Matrix
+						Management</a></li>
+				<li id="menuIco10"><a href="viewFaq">FAQ Management</a></li>
+				<li id="menuIco7"><a href="viewContent">Content Management</a></li>
+			</ul>
+			</nav>
+			<a href="#" class="menuSh" title="Menu"></a>
+		</div>
+		<!--/Left Area-->
+
+		<!--Body Area-->
+		<div class="bodyWrap">
+			<div class="topBar">
+				<div class="fixedArea">
+					<div class="titleArea">
+						<center>
+							<h1>
+								<strong>Role Level Details</strong>
+							</h1>
+						</center>
+					</div>
+					<!--<a href="#" class="menuSh" title="Menu"></a>  -->
+					<!-- <div class="searchArea">
+						<input name="search" type="text" placeholder="Search"> <input
+							name="" type="submit">
+					</div> -->
+					<!--<a href="logout" class="logOut">Logout</a> -->
+				</div>
+			</div>
+			<div class="bodyArea">
+				<div class="fixedArea">
+					<div class="contentPart">
+
+						<!-- <div class="headingArea">
+							<h3>listing Screen</h3>
+							<p>listing Screen</p>
+						</div> -->
+
+						<script>
+	function confirmDelete(id) {
+		var r = confirm("Are You Sure?????");
+		if (r == true) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
+						<!--<div class="titleArea">
+          <center>
+            <h1> <strong>Role Level Details</strong> </h1>
+          </center>
+        </div> -->
+						<form action="addRoleLevelForm" method="post">
+							<input type="submit" value="Add Role Level" class="buttonStyle">
+						</form>
+						</br>
+						<table id="example" class="genContentStyle">
+							<thead>
+								<tr>
+									<th>Serial</th>
+									<th>Level Name</th>
+									<th>Parent Name</th>
+									<th align="center" class="noarrow">
+										<!--Edit | Delete -->
+									</th>
+									<!--<th align="center" class="noarrow">Delete</th> -->
+								</tr>
+							</thead>
+							<tbody>
+								<tr align="center">
+									<td>1</td>
+									<td>Region</td>
+									<td>Head Office</td>
+									<td><a href="editRoleLevel?rowLevelId=2"><img
+											src="resources/images/admin/edit-new.png" /></a> <a
+										href="deleteRoleLevel?rowLevelId=2"
+										onclick="return confirmDelete(2)"><img
+											src="resources/images/admin/delete-new.png" /></a></td>
+									<!--<td><a href="deleteRoleLevel?rowLevelId=2" onclick="return confirmDelete(2)"><img src="http://10.0.2.99:14564/AxisCampaign/resources/images/admin/delete-new.png" /></a></td> -->
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--/Body Area-->
+			<div class="clear"></div>
+			<!--Footer-->
+			<footer class="footer">
+			<div class="fixedArea">
+				<p class="copyright">Copyright &copy; 2015 Axis Bank, India.</p>
+				<p>
+					<span><a href="#">Help</a> | </span>Developed by INDUSNET
+					TECHNOLOGY <a href="#" class="hideArrow"><img
+						src="http://10.0.2.99:14564/AxisCampaign/resources/images/admin/footer-arrow.png"
+						width="12" height="8" alt=""></a>
+				</p>
+				<div class="clear"></div>
+			</div>
+			</footer>
+			<!--/Footer-->
+			<div class="clear"></div>
+		</div>
+</body>
+</html>

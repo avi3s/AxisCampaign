@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//LOGGER" "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+	<appender name="Async" class="org.apache.log4j.AsyncAppender">
+		<param name="Blocking" value="true" />
+		<appender-ref ref="Console" />
+		<appender-ref ref="FILE" />
+	</appender>
+
+	<appender name="Console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.TTCCLayout" />
+	</appender>
+
+	<appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="../logs/BugTracker/application.log" />
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="50" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{dd/MM/yy hh:mm:ss:sss z}] %5p %c{2}: %m%n" />
+		</layout>
+	</appender>
+
+
+
+
+	<appender name="DBFILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="50" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{dd/MM/yy hh:mm:ss:sss z}] %5p %c{2}: %m%n" />
+		</layout>
+	</appender>
+
+
+
+	<logger name="org.hibernate">
+		<level value="ERROR" />
+		<appender-ref ref="Console" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="ERROR" />
+		<appender-ref ref="Console" />
+	</logger>
+	<root>
+		<priority value="debug" />
+		<appender-ref ref="Async" />
+	</root>
+</log4j:configuration>

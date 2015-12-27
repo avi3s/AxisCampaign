@@ -1,0 +1,65 @@
+.responsive-accordion {
+	margin: 0px 0 20px 0;
+	padding: 0;
+	list-style-type: none;
+}
+.responsive-accordion li {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+.responsive-accordion li:last-child { margin-bottom: 0; }
+.responsive-accordion li .responsive-accordion-head { cursor: pointer; }
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-head.active { color: #fff; background: #be225f; }
+.responsive-accordion-default.responsive-accordion li:nth-child(even) .responsive-accordion-head { background: #b4b9bf; }
+.responsive-accordion-default.responsive-accordion li:nth-child(even) .responsive-accordion-head.active { background: #be225f; }
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-head {
+	padding: 14px 43px 14px 12px;
+	font-size: 15px;
+	background: #9498a1;
+	color: #fff;
+	line-height: normal;
+	position: relative;
+}
+
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-head i {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+}
+
+.responsive-accordion-default.responsive-accordion li .responsive-accordion-panel {
+	border-top: 0;
+	padding: 20px;
+	background: #edf1f4;
+	font-size: 14px;
+	color: #585d60;
+}
+.responsive-accordion-panel ul {
+	margin-top: 25px;
+}
+.responsive-accordion-panel ul li {
+	margin: 10px 0;
+	/*background: url(../../images/user/pink-arrow.png) no-repeat center left;
+	padding-left: 15px;*/
+}
+.responsive-accordion-panel ul li span {
+	margin-right: 9px;
+}
+.responsive-accordion-panel ul li.head {
+	margin: 10px 0;
+	color: #be225f;
+	font-size: 16px;
+	padding-left: 0;
+}
+.responsive-accordion-plus {
+	background: url(../../images/user/plus-icon.png) no-repeat;
+	width: 28px;
+	height: 27px;
+	display: block;
+}
+.responsive-accordion-minus {
+	background: url(../../images/user/minus-icon.png) no-repeat;
+	width: 28px;
+	height: 27px;
+	display: block;
+}

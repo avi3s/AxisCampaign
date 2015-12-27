@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axis Campaign Portal</title>
+<link href="resources/css/admin/style.css" rel="stylesheet"
+	type="text/css">
+<link href="resources/css/admin/responsive.css" rel="stylesheet"
+	type="text/css">
+<script
+	src="http://axisb.indusnet.co.in:8080/AxisCampaign/resources/js/admin/jquery-1.11.2.min.js"></script>
+<script src="resources/js/admin/custom.js"></script>
+<script
+	src="http://axisb.indusnet.co.in:8080/AxisCampaign/resources/js/admin/jquery.dataTables.min.js"></script>
+<link href="resources/css/admin/jquery.dataTables.min.css"
+	rel="stylesheet" type="text/css">
+<script
+	src="http://axisb.indusnet.co.in:8080/AxisCampaign/resources/js/admin/dataTables.responsive.min.js"></script>
+<link href="resources/css/admin/dataTables.responsive.css"
+	rel="stylesheet" type="text/css">
+
+<!-- <script src='https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js'></script>
+<link href='https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css' />
+<script src='https://cdn.datatables.net/responsive/1.0.0/js/dataTables.responsive.min.js'></script> 
+<link href='https://cdn.datatables.net/responsive/1.0.0/css/dataTables.responsive.css' rel='stylesheet' type='text/css' /> -->
+
+<!--[if lt IE 9]>
+		<script src="js/admin/html5.js" ></script>
+  	<![endif]-->
+
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+						//alert("ok");
+						$('#example')
+								.DataTable(
+										{
+											responsive : true,
+											"pagingType" : "full_numbers",
+											language : {
+												searchPlaceholder : "Search",
+												"paginate" : {
+													"previous" : "< Previous",
+			            "next" : "Next >",
+													"first" : "< First",
+			            "last" : "Last >"
+												}
+											}
+										});
+
+						$('#example1')
+								.DataTable(
+										{
+											responsive : true,
+											"pagingType" : "full_numbers",
+											language : {
+												searchPlaceholder : "Search",
+												"paginate" : {
+													"previous" : "< Previous",
+	            "next" : "Next >",
+													"first" : "< First",
+	            "last" : "Last >"
+												}
+											}
+										});
+
+						$(".dataTables_filter label").contents().first()
+								.remove();
+					});
+</script>
+</head>
+
+<body>
+	<div class="wholeWrap">
+		<!--Header-->
+		<header class="header">
+		<div class="fixedArea">
+			<figure id="logo"> <a href="editAdminProfile"><img
+				src="http://axisb.indusnet.co.in:8080/AxisCampaign/resources/images/admin/logo.png"
+				width="168" height="40" alt=""></a> </figure>
+			<h3>Badhti ka naam zindagi...</h3>
+		</div>
+		<a href="logout" class="logOut">Logout</a> </header>
+		<!--/Header-->
+
+		<!--Left Area-->
+		<div class="leftArea">
+			<!-- <div class="profileArea">
+				<figure> <a href="editAdminProfile"><img
+					src="http://axisb.indusnet.co.in:8080/AxisCampaign/resources/images/admin/avatar.png" width="58"
+					height="58" alt=""></a> </figure>
+				<h2>
+					Super Admin
+				</h2>
+			</div> -->
+			<nav class="nav" id="nav">
+			<ul>
+
+				<li id="menuIco5"><a href="javascript:void(0);">Campaign
+						Management</a>
+					<ul>
+						<li id="menuIco11"><a href="viewTargetField">Target Field
+								Management</a></li>
+						<li id="menuIco12"><a href="viewTargetFieldValue">Target
+								Field Value Management</a></li>
+						<li id="menuIco13"><a href="viewacheivementfield">Achievement
+								Field Management</a></li>
+						<li id="menuIco14"><a
+							href="viewacheivementfieldvalueManagement">Achievement
+								Field&nbsp;Value Management</a></li>
+						<li id="menuIco6"><a href="viewPromotionalFileUpload">User
+								Specific File Upload Management</a></li>
+					</ul></li>
+
+				<li id="menuIco4"><a href="javascript:void(0);">User
+						Management</a>
+
+					<ul>
+
+						<li id="menuIco1"><a href="viewRoleLevel">Role Level
+								Management</a></li>
+
+						<li id="menuIco2"><a href="viewSubRoleLevel">Sub Role
+								Level Management</a></li>
+
+						<li id="menuIco3"><a href="viewRole">Role Management</a></li>
+					</ul></li>
+
+
+
+				<li id="menuIco8"><a href="viewNotification">Notification
+						Management</a></li>
+
+
+				<li id="menuIco9"><a href="viewEscalationMatrix">Escalation
+						Matrix Management</a></li>
+
+				<li id="menuIco10"><a href="viewFaq">FAQ Management</a></li>
+
+
+				<li id="menuIco7"><a href="viewContent">Content Management
+				</a></li>
+
+
+			</ul>
+			</nav>
+			<a href="#" class="menuSh" title="Menu"></a>
+		</div>
+		<!--/Left Area-->
+
+		<!--Body Area-->
+		<div class="bodyWrap">
+			<div class="topBar">
+				<div class="fixedArea">
+					<!--<a href="#" class="menuSh" title="Menu"></a>
+					 <div class="searchArea">
+						<input name="search" type="text" placeholder="Search"> <input
+							name="" type="submit">
+					</div> 
+					<a href="logout" class="logOut">Logout</a>  -->
+				</div>
+			</div>
+
+			<div class="bodyArea">
+				<div class="fixedArea">
+					<div class="contentPart">
+
+						<!-- <div class="headingArea">
+							<h3>listing Screen</h3>
+							<p>listing Screen</p>
+						</div> -->
+
+						<script>
+	function myFunction(id) {
+		var r = confirm("Are You Sure?????");
+		if (r == true) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
+						<div class="titleArea">
+							<center>
+								<h1>
+									<strong>Campaign Details</strong>
+								</h1>
+							</center>
+						</div>
+						<form method="get" name="frm" action="addCampaign">
+							<input type="submit" value="Add Campaign" class="buttonStyle">
+						</form>
+
+
+
+						<br>
+
+						<table id="example" class="genContentStyle">
+							<thead>
+								<tr>
+									<th align="center">Serial</th>
+									<th align="center">Name</th>
+									<th align="center">Description</th>
+									<th align="center">Financial Year</th>
+									<th align="center">Quarter</th>
+									<th align="center" class="noarrow">
+										<!-- Edit</th>
+			<th align="center" class="noarrow">Delete -->
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+
+
+
+
+								<tr>
+									<td align="center">1</td>
+									<td align="center">Campaign 7</td>
+									<td align="center">This is quarter 4 for branch head.....</td>
+									<td align="center">2015-2016</td>
+
+
+
+
+
+
+
+
+									<td align="center">Quarter 4</td>
+
+
+									<td align="center"><a href="editCampaign?id=8"><img
+											src="resources/images/admin/edit-new.png" /></a> <!-- <td align="center"> -->
+										<a href="deleteCampaign?id=8" onclick="return myFunction()"><img
+											src="resources/images/admin/delete-new.png" /></a>
+								</tr>
+
+
+								<tr>
+									<td align="center">2</td>
+									<td align="center">Campaign 6</td>
+									<td align="center">This is for Director.....</td>
+									<td align="center">2015-2016</td>
+
+
+
+
+
+
+									<td align="center">Quarter 3</td>
+
+
+
+
+									<td align="center"><a href="editCampaign?id=7"><img
+											src="resources/images/admin/edit-new.png" /></a> <!-- <td align="center"> -->
+										<a href="deleteCampaign?id=7" onclick="return myFunction()"><img
+											src="resources/images/admin/delete-new.png" /></a>
+								</tr>
+
+
+								<tr>
+									<td align="center">3</td>
+									<td align="center">Campaign 5</td>
+									<td align="center">This is for Region Branch Banking
+										Head(RBBH).....</td>
+									<td align="center">2015-2016</td>
+
+
+
+
+
+
+									<td align="center">Quarter 3</td>
+
+
+
+
+									<td align="center"><a href="editCampaign?id=6"><img
+											src="resources/images/admin/edit-new.png" /></a> <!-- <td align="center"> -->
+										<a href="deleteCampaign?id=6" onclick="return myFunction()"><img
+											src="resources/images/admin/delete-new.png" /></a>
+								</tr>
+
+
+								<tr>
+									<td align="center">4</td>
+									<td align="center">Campaign 4</td>
+									<td align="center">This is for Cluster Head....</td>
+									<td align="center">2015-2016</td>
+
+
+
+
+
+
+									<td align="center">Quarter 3</td>
+
+
+
+
+									<td align="center"><a href="editCampaign?id=5"><img
+											src="resources/images/admin/edit-new.png" /></a> <!-- <td align="center"> -->
+										<a href="deleteCampaign?id=5" onclick="return myFunction()"><img
+											src="resources/images/admin/delete-new.png" /></a>
+								</tr>
+
+
+								<tr>
+									<td align="center">5</td>
+									<td align="center">Campaign 3</td>
+									<td align="center">This is for Circle Head.....</td>
+									<td align="center">2015-2016</td>
+
+
+
+
+
+
+									<td align="center">Quarter 3</td>
+
+
+
+
+									<td align="center"><a href="editCampaign?id=4"><img
+											src="resources/images/admin/edit-new.png" /></a> <!-- <td align="center"> -->
+										<a href="deleteCampaign?id=4" onclick="return myFunction()"><img
+											src="resources/images/admin/delete-new.png" /></a>
+								</tr>
+
+
+								<tr>
+									<td align="center">6</td>
+									<td align="center">Campaign 2</td>
+									<td align="center">This is for Branch Head.....</td>
+									<td align="center">2015-2016</td>
+
+
+
+
+
+
+									<td align="center">Quarter 3</td>
+
+
+
+
+									<td align="center"><a href="editCampaign?id=3"><img
+											src="resources/images/admin/edit-new.png" /></a> <!-- <td align="center"> -->
+										<a href="deleteCampaign?id=3" onclick="return myFunction()"><img
+											src="resources/images/admin/delete-new.png" /></a>
+								</tr>
+
+
+								<tr>
+									<td align="center">7</td>
+									<td align="center">Campaign 1</td>
+									<td align="center">This is campaign for all roles.....</td>
+									<td align="center">2015-2016</td>
+
+
+
+
+
+
+									<td align="center">Quarter 3</td>
+
+
+
+
+									<td align="center"><a href="editCampaign?id=2"><img
+											src="resources/images/admin/edit-new.png" /></a> <!-- <td align="center"> -->
+										<a href="deleteCampaign?id=2" onclick="return myFunction()"><img
+											src="resources/images/admin/delete-new.png" /></a>
+								</tr>
+
+
+
+							</tbody>
+						</table>
+
+
+
+					</div>
+				</div>
+			</div>
+			<!--/Body Area-->
+			<div class="clear"></div>
+			<!--Footer-->
+			<footer class="footer">
+			<div class="fixedArea">
+				<p class="copyright" align="center">Copyright &copy; 2015 Axis
+					Bank, India.</p>
+
+
+				<div class="clear"></div>
+			</div>
+			</footer>
+			<!--/Footer-->
+			<div class="clear"></div>
+		</div>
+</body>
+</html>
